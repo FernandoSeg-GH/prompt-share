@@ -55,8 +55,8 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           <Image
             src={
               copied === post.prompt
-                ? "/assets/icons/tick.svg"
-                : "/assets/icons/copy.svg"
+              ? "/assets/icons/tick.svg"
+              : "/assets/icons/copy.svg"
             }
             alt={copied === post.prompt ? "tick_icon" : "copy_icon"}
             width={12}
@@ -64,8 +64,11 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           />
         </div>
       </div>
+      
+      <p className='my-6 font-satoshi text-md text-gray-700'>{post.title}</p>
 
       <p className='my-4 font-satoshi text-sm text-gray-700'>{post.prompt}</p>
+
       <p
         className='font-inter text-sm blue_gradient cursor-pointer'
         onClick={() => handleTagClick && handleTagClick(post.tag)}

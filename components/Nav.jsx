@@ -30,13 +30,14 @@ const Nav = () => {
         />
         <p className='logo_text'>Promptopia</p>
       </Link>
+      {/* {alert(session?.user?.name)} */}
 
       {/* Desktop Navigation */}
       <div className='sm:flex hidden'>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
             <Link href='/create-prompt' className='black_btn'>
-              Create Post
+              Create Prompt
             </Link>
 
             <button type='button' onClick={signOut} className='outline_btn'>
@@ -45,7 +46,7 @@ const Nav = () => {
 
             <Link href='/profile'>
               <Image
-                src={session?.user.image}
+                src={session ? session?.user.image || "/assets/images/logo.svg" : "/assets/images/logo.svg"}
                 width={37}
                 height={37}
                 className='rounded-full'

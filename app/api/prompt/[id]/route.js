@@ -29,6 +29,7 @@ export const PATCH = async (request, { params }) => {
         }
 
         // Update the prompt with new data
+        existingPrompt.title = title;
         existingPrompt.prompt = prompt;
         existingPrompt.tag = tag;
 
