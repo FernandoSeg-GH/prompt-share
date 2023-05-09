@@ -22,6 +22,10 @@ const RootLayout = ({ children }) => (
         </main>
       </Provider>
     </body>
+    <footer className="w-full py-6">
+      <p className="mx-auto text-sm text-center">Powered by <a href="https://vincidigitalventures.com" target="_blank" className="underline">
+        Vinci Digital Ventures</a> &copy; 2023</p>
+    </footer>
   </html>
 );
 
