@@ -2,6 +2,7 @@ import "@styles/globals.css";
 
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
+import GoogleAnalytics from "@utils/GoogleAnalytics";
 
 export const metadata = {
   title: "Prompt-Share",
@@ -10,6 +11,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   <html lang='en'>
+    <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
     <body>
       <Provider>
         <div className='main'>
