@@ -1,2 +1,2 @@
 # Prompt-Share
-Save and share your prompts with ease.
+Save and share your prompts
